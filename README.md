@@ -1,4 +1,4 @@
-# ECE30007-02_IAIP
+# ECE30005-02-Algorithms-Analysis
 
 ## 2주차
 ### O-notation
