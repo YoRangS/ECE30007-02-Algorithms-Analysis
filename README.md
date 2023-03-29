@@ -35,8 +35,8 @@ $g(n)=o(f(n))$ <=> $f(n)=\omega(g(n))$
 3. $f(n)\in\Theta(g(n))$ and $g(n)\in\Theta(h(n))$ => $f(n)\in\Theta(h(n))$
 
 ### 알고리즘의 시간복잡도
-$O(n^2)$: 알고리즘의 worst case
-$\Omega(n^2)$: 알고리즘의 best case
+$O(n^2)$: 알고리즘의 worst case    
+$\Omega(n^2)$: 알고리즘의 best case    
 $\theta(n^2)$: 위의 2개 
 
 ## 3주차
