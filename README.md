@@ -1,6 +1,7 @@
 # ECE30005-02-Algorithms-Analysis
 
-## 2주차
+
+## 2. Growth of Functions
 ### O-notation
 $O(g(n))$은 모든 $n>=n_0$에서 $0<=f(n)<=cg(n)$을 만족하는 $c (c>0)$와 $n_0$이 있을 때 $f(n)$의 집합
 
@@ -39,7 +40,9 @@ $O(n^2)$: 알고리즘의 worst case
 $\Omega(n^2)$: 알고리즘의 best case    
 $\theta(n^2)$: 위의 2개 
 
-## 3주차
+- - -
+
+## 3. Divide and Conquer
 ### Recurrence vs Recursion
 재귀(recursion)와 순환(recurrence)은 컴퓨터 과학과 수학에서 관련된 개념입니다. 그러나 두 개념은 서로 다릅니다.
 
@@ -52,7 +55,18 @@ $\theta(n^2)$: 위의 2개
 - ChatGPT 참조
 
 ### Solving recurrence equations
-#### Iteration method
-#### Substitution method
-#### Recursion-tree method
-#### Master method
+
+1. Iteration method   
+이건 걍 귀납법(Inductive Hypothesis)이다.
+2. Substitution method   
+![](2023-04-18-19-51-39.png)
+3. Recursion-tree method   
+![](2023-04-18-20-15-40.png)   
+위처럼 등비수열 같이 계산하면 된다.
+4. Master method   
+$T(n) = aT(n/b)+f(n)$에서 a, b와 $f(n)$를 비교하는 방법이다.
+![](2023-04-18-20-30-52.png)
+
+- - -
+
+## 4. Dynamic Programming
