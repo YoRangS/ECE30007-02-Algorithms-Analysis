@@ -59,14 +59,53 @@ $\theta(n^2)$: 위의 2개
 1. Iteration method   
 이건 걍 귀납법(Inductive Hypothesis)이다.
 2. Substitution method   
-![](2023-04-18-19-51-39.png)
+![](images/2023-04-18-19-51-39.png)
 3. Recursion-tree method   
-![](2023-04-18-20-15-40.png)   
+![](images/2023-04-18-20-15-40.png)   
 위처럼 등비수열 같이 계산하면 된다.
 4. Master method   
 $T(n) = aT(n/b)+f(n)$에서 a, b와 $f(n)$를 비교하는 방법이다.
-![](2023-04-18-20-30-52.png)
+![](images/2023-04-18-20-30-52.png)
 
 - - -
 
 ## 4. Dynamic Programming
+
+## 10. Elementary Graph Algorithms
+
+- Vertex or Node
+  - 그래프의 동그라미들
+  - Adjacent nodes: 연결된 노드들
+- Edge (= Arc)
+  - 연결하는 선
+- Graph
+  - Directed or undirected
+  - Weighted or not weighted
+  - directed는 self connect가 가능하지만 undirected는 그렇지 않다
+  - 두 node 사이를 연결하는 edge는 여러개가 될 수 없다
+- Symmetric digraph
+  - 대칭 그래프 : 모든 edge의 reverse edge도 존재하는 그래프
+- Complete graphs
+  - 모든 node에 연결 가능한 모든 edge가 연결되어 있는 것
+- Path
+  - 연결된 노드들을 모은 집합
+  - simple한 P는 Path의 node들을 다 이을 Path가 P가 유일할 때
+- Cycle
+  - Path와 비슷하지만 처음과 마지막이 이어져 있음
+- Subgraph
+  - H = (W,F)가 G = (V, E)의 subgraph일 때
+  - V의 부분집합은 W이고, E의 부분집합은 F이다.
+- Spanning graph
+  - subgraph지만 부모 그래프의 모든 node를 가지고 있는 graph
+- connected
+  - graph G가 connected 하다는 것은 G의 어떤 두 node도 path를 통해 연결 가능
+  - connected componentes는 한 그래프의 덩어리(?)라고 보면 됨
+- Strongly connected digraph
+  - directed graph에서 node u가 v에 reachable한다면, v도 u에 reachable한 것
+![](images/2023-05-24-22-16-12.png)
+- Directed acyclic graph
+  - DAG이라고 부름 (acyclic = no-cycles)
+- - -
+- Tree
+  - cycle을 포함하지 않은 graph
+  - Spanning Tree : 한 graph의 모든 node를 연결하는 tree
